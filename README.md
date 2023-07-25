@@ -27,6 +27,8 @@ The star schema for the Instagram data consists of the following tables:
 - follows table: Data about following relationships between users.
 - tags table: Info about tags used in comments.
 
+![Screen Shot 2023-07-25 at 12 17 06 PM](https://github.com/earlyann/instagram_database/assets/119711479/69ca630d-fb43-419e-a362-e579bd271d05)
+
 ### Benefits of Data Transformation (CSVs to DB)
 - Data Persistence: Assures data longevity, allowing historical data access.
 - Data Integrity: Reduces the risk of errors via enforced constraints.
