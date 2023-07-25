@@ -1,0 +1,62 @@
+Users
+-
+user_id PK INT
+name VARCHAR
+created_time DATE
+private BOOLEAN
+post_count INT
+verified_status BOOLEAN
+
+Photos
+-
+photo_id PK INT
+user_id FK >- Users.user_id
+created_date DATE
+insta_filter_used BOOLEAN
+photo_type VARCHAR
+
+Likes
+-
+like_id PK INT
+user_id FK >- Users.user_id
+photo_id FK >- Photos.photo_id
+created_time DATE
+is_follower_active BOOLEAN
+like_type VARCHAR
+
+Comments
+-
+comment_id PK INT
+user_id FK >- Users.user_id
+photo_id FK >- Photos.photo_id
+created_timestamp DATETIME
+emoji_used BOOLEAN
+hashtags_used_count INT
+
+Follows
+-
+follow_id PK INT
+follower_user_id FK >- Users.user_id
+user_id FK >- Users.user_id
+created_time DATE
+is_follower_active INTEGER
+followee_acc_status VARCHAR
+
+Tags
+-
+tag_id PK INT 
+tag_text VARCHAR
+created_time DATE
+location VARCHAR
+
+Interactions
+-
+interaction_id PK INT
+user_id FK >- Users.user_id
+photo_id FK >- Photos.photo_id
+tag_id FK >- Tags.tag_id >-Tags.tag_id
+comment_id FK >- Comments.comment_id
+like_id FK >- Likes.like_id
+follow_id FK >- Follows.follow_id
+interaction_date DATE
+interaction_type VARCHAR
