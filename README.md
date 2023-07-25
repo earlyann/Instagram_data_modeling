@@ -8,6 +8,17 @@ The primary data source is comprised of generated data and sourced from Kaggle: 
 ### Data Source
 The data utilized in this project is fictional, sourced from the link above.
 
+### Benefits of Data Transformation (CSVs to DB)
+These are a few of the reasons why I chose to transform my data before any analysis. 
+- Data Persistence: Assures data longevity, allowing historical data access.
+- Data Integrity: Reduces the risk of errors via enforced constraints.
+- Scalability: Handles large data sets and is able to grow effectively.
+- Efficient Data Retrieval: Optimized for quick data access.
+- Security: Features like access control and encryption keep data safe.
+- Collaboration: Facilitates data sharing among users.
+- Tool Integration: Easily integrates with analytical tools.
+- Business Questions to Address
+
 ##### Why Choose Star Schema?
 When exploring the data, I decided that this was a good candidate for star schema modeling. Here are a few benefits of the star schema:
 - Simplicity: Easily understandable structure with a single fact table and connected dimension tables.
@@ -29,16 +40,6 @@ The star schema for the Instagram data consists of the following tables:
 
 ![Screen Shot 2023-07-25 at 12 17 06 PM](https://github.com/earlyann/instagram_database/assets/119711479/69ca630d-fb43-419e-a362-e579bd271d05)
 
-### Benefits of Data Transformation (CSVs to DB)
-- Data Persistence: Assures data longevity, allowing historical data access.
-- Data Integrity: Reduces the risk of errors via enforced constraints.
-- Scalability: Handles large data sets.
-- Efficient Data Retrieval: Optimized for quick data access.
-- Security: Features like access control and encryption keep data safe.
-- Collaboration: Facilitates data sharing among users.
-- Tool Integration: Easily integrates with analytical tools.
-- Business Questions to Address
-  
 ### Project Components
 - A notebook for creating a PostgreSQL database - to create this database you must have PostGres installed and your own connection data entered into the notebook
 - A notebook for crafting an SQLite database - only Python libraries are needed to create this
